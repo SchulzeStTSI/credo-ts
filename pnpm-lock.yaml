@@ -684,17 +684,17 @@ importers:
         specifier: ^0.6.4
         version: 0.6.4(encoding@0.1.13)
       '@sphereon/oid4vci-client':
-        specifier: ^0.10.3
-        version: 0.10.3(encoding@0.1.13)(msrcrypto@1.5.8)
+        specifier: ^0.14.0
+        version: 0.14.0(encoding@0.1.13)
       '@sphereon/oid4vci-common':
-        specifier: ^0.10.3
-        version: 0.10.3(encoding@0.1.13)(msrcrypto@1.5.8)
+        specifier: ^0.14.0
+        version: 0.14.0(encoding@0.1.13)
       '@sphereon/oid4vci-issuer':
-        specifier: ^0.10.3
-        version: 0.10.3(encoding@0.1.13)(msrcrypto@1.5.8)
+        specifier: ^0.14.0
+        version: 0.14.0(encoding@0.1.13)
       '@sphereon/ssi-types':
-        specifier: ^0.23.0
-        version: 0.23.4
+        specifier: 0.26.1-next.132
+        version: 0.26.1-next.132
       class-transformer:
         specifier: ^0.5.1
         version: 0.5.1
@@ -2366,21 +2366,16 @@ packages:
   '@sphereon/did-uni-client@0.6.3':
     resolution: {integrity: sha512-g7LD7ofbE36slHN7Bhr5dwUrj6t0BuZeXBYJMaVY/pOeL1vJxW1cZHbZqu0NSfOmzyBg4nsYVlgTjyi/Aua2ew==}
 
-  '@sphereon/oid4vci-client@0.10.3':
-    resolution: {integrity: sha512-PkIZrwTMrHlgwcDNimWDQaAgi+9ptkV79g/sQJJAe4g8NCt3WyXtsV9l88CdzxDGVGDtzsnYqPXkimxP4eSScw==}
+  '@sphereon/oid4vci-client@0.14.0':
+    resolution: {integrity: sha512-4QuXPnGI4TBH6YytTBEWSHCMLdTvUnTpTZEVrFM2H/wZxYd+EpCvULX3g6GQtEsDV2svuqH80cZaTv78RSnq2A==}
     engines: {node: '>=18'}
 
-  '@sphereon/oid4vci-common@0.10.3':
-    resolution: {integrity: sha512-VsUnDKkKm2yQ3lzAt2CY6vL06mZDK9dhwFT6T92aq03ncbUcS6gelwccdsXEMEfi5r4baFemiFM1O5v+mPjuEA==}
+  '@sphereon/oid4vci-common@0.14.0':
+    resolution: {integrity: sha512-AubbtqNTnW5U+RFaiVWR28RsWdsvKnmmLKYsUW7T2Q+mmwHCAVNZhc8BP+JRdxN0cRYC4JVaXiUS797Odfiavg==}
     engines: {node: '>=18'}
-    peerDependencies:
-      msrcrypto: ^1.5.8
-    peerDependenciesMeta:
-      msrcrypto:
-        optional: true
 
-  '@sphereon/oid4vci-issuer@0.10.3':
-    resolution: {integrity: sha512-qhm8ypkXuYsaG5XmXIFwL9DUJQ0TJScNjvg5w7beAm+zjz0sOkwIjXdS7S+29LfWj0BkYiRZp1d3mj8H/rmdUw==}
+  '@sphereon/oid4vci-issuer@0.14.0':
+    resolution: {integrity: sha512-GImbDB/yesPK7iAD575J1ZNF8bjs4DinrMuLFfXqFPzLeJeyYZf8NgqG0W7KHtS37njNtchGsuGnammHFJl5ZA==}
     engines: {node: '>=18'}
     peerDependencies:
       awesome-qr: ^2.1.5-rc.0
@@ -2400,6 +2395,9 @@ packages:
 
   '@sphereon/ssi-types@0.23.4':
     resolution: {integrity: sha512-1lM2yfOEhpcYYBxm/12KYY4n3ZSahVf5rFqGdterQkMJMthwr20HqTjw3+VK5p7IVf+86DyBoZJyS4V9tSsoCA==}
+
+  '@sphereon/ssi-types@0.26.1-next.132':
+    resolution: {integrity: sha512-coqhozmVf2phy40l1htj/zbLJLJhyD69ZukBVR4gKn35t8q2B2EZhJbCIPWKk2HWT6+gV+JUBQ9n4v3cSHNCJg==}
 
   '@sphereon/ssi-types@0.9.0':
     resolution: {integrity: sha512-umCr/syNcmvMMbQ+i/r/mwjI1Qw2aFPp9AwBTvTo1ailAVaaJjJGPkkVz1K9/2NZATNdDiQ3A8yGzdVJoKh9pA==}
@@ -4965,6 +4963,10 @@ packages:
 
   jwt-decode@3.1.2:
     resolution: {integrity: sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==}
+
+  jwt-decode@4.0.0:
+    resolution: {integrity: sha512-+KJGIyHgkGuIq3IEBNftfhW/LfWhXUIY6OmyVWjliu5KH1y0fw7VQ8YndE2O4qZdMSd9SqbnC8GOcZEy0Om7sA==}
+    engines: {node: '>=18'}
 
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
@@ -9863,37 +9865,35 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@sphereon/oid4vci-client@0.10.3(encoding@0.1.13)(msrcrypto@1.5.8)':
+  '@sphereon/oid4vci-client@0.14.0(encoding@0.1.13)':
     dependencies:
-      '@sphereon/oid4vci-common': 0.10.3(encoding@0.1.13)(msrcrypto@1.5.8)
-      '@sphereon/ssi-types': 0.23.4
+      '@sphereon/oid4vci-common': 0.14.0(encoding@0.1.13)
+      '@sphereon/ssi-types': 0.26.1-next.132
       cross-fetch: 3.1.8(encoding@0.1.13)
       debug: 4.3.5
     transitivePeerDependencies:
       - encoding
-      - msrcrypto
       - supports-color
 
-  '@sphereon/oid4vci-common@0.10.3(encoding@0.1.13)(msrcrypto@1.5.8)':
+  '@sphereon/oid4vci-common@0.14.0(encoding@0.1.13)':
     dependencies:
-      '@sphereon/ssi-types': 0.23.4
+      '@sphereon/ssi-types': 0.26.1-next.132
       cross-fetch: 3.1.8(encoding@0.1.13)
-      jwt-decode: 3.1.2
+      jwt-decode: 4.0.0
       sha.js: 2.4.11
       uint8arrays: 3.1.1
-    optionalDependencies:
-      msrcrypto: 1.5.8
     transitivePeerDependencies:
       - encoding
+      - supports-color
 
-  '@sphereon/oid4vci-issuer@0.10.3(encoding@0.1.13)(msrcrypto@1.5.8)':
+  '@sphereon/oid4vci-issuer@0.14.0(encoding@0.1.13)':
     dependencies:
-      '@sphereon/oid4vci-common': 0.10.3(encoding@0.1.13)(msrcrypto@1.5.8)
-      '@sphereon/ssi-types': 0.23.4
+      '@sphereon/oid4vci-common': 0.14.0(encoding@0.1.13)
+      '@sphereon/ssi-types': 0.26.1-next.132
       uuid: 9.0.1
     transitivePeerDependencies:
       - encoding
-      - msrcrypto
+      - supports-color
 
   '@sphereon/pex-models@2.2.4': {}
 
@@ -9921,6 +9921,15 @@ snapshots:
     dependencies:
       '@sd-jwt/decode': 0.6.1
       jwt-decode: 3.1.2
+
+  '@sphereon/ssi-types@0.26.1-next.132':
+    dependencies:
+      '@sd-jwt/decode': 0.6.1
+      debug: 4.3.5
+      events: 3.3.0
+      jwt-decode: 3.1.2
+    transitivePeerDependencies:
+      - supports-color
 
   '@sphereon/ssi-types@0.9.0':
     dependencies:
@@ -13215,6 +13224,8 @@ snapshots:
       underscore: 1.12.1
 
   jwt-decode@3.1.2: {}
+
+  jwt-decode@4.0.0: {}
 
   keyv@4.5.4:
     dependencies:
